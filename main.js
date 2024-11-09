@@ -4,6 +4,7 @@ function convertt(){
     var selectvalue=typee.value;
     if(input.value==""){
         alert("Type valid  Temperature")
+        location.reload()
         input.value="";
     }
     else if(selectvalue=="select"){
@@ -18,22 +19,16 @@ function convertt(){
         var kelvin=input.value;
         var farenheit=((input.value-273)*1.8)+32;
         var celsius=input.value-273;
-        
     }
     else if(selectvalue=="Farenheit"){
         var kelvin=((input.value-32)*0.56)+273
         var farenheit=input.value;
         var celsius=(0.56)*(input.value-32);
     }
-    // celsius.toFixed(2);
-    // farenheit.toFixed(2);
-    // kelvin.toFixed(2);
     var c=document.getElementById("c");
     var f=document.getElementById("f");
     var k=document.getElementById("k");
-    c.textContent=celsius;
-    f.textContent=farenheit;
-    k.textContent=kelvin;
-
-
+    c.textContent=parseFloat(celsius).toFixed(2);
+    f.textContent=parseFloat(farenheit).toFixed(2);
+    k.textContent=parseFloat(kelvin).toFixed(2);
 }
