@@ -37,6 +37,7 @@ p{
    position:absolute;
 }
 .cel,.kel{
+    color: rgb(17, 123, 17);
     padding-top: 10px;
     text-align: center;
     position:relative;
@@ -63,6 +64,7 @@ p{
     font-size: 20px;
  }
  .temp{
+    color: rgb(9, 103, 9);
     border-width: 1px;
      border-color: rgb(208, 242, 220);
      border-style: solid;
